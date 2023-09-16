@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Left logo on Navabr -->
+            <div class="nav-left">
+                <p class="nav-left-logo">CheckMail</p>
+            </div>
+            <!-- Right Navigation Links -->
+            <div class="nav-right">
+                <ul class="nav-right-list">
+                    <li class="nav-right-listItems">
+                        <a href=""> Home </a>
+                    </li>
+                    <li class="nav-right-listItems">
+                        <a href=""> About </a>
+                    </li>
+                    <li class="nav-right-listItems">
+                        <a href=""> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Body -->
+    <section class="main">
+        <form class="container">
+            <form action="main-form">
+                <h1 class="main-form-heading">Enter email to check</h1>
+                <div class="main-form-items">
+                    <label for="email" class="main-form-items-label">Email address:</label> <br>
+                    <input placeholder="example@something.com" type="email" class="main-form-items-input" required minlength="5" id="email" >
+                </div>
+                <button type="submit" class="main-form-btn" id = 'handleSubmit'> Check</button>
+            </form>
+        </form>
+        <div class="container">
+            <h2 class="result">Result</h2>
+            <p class="result-list" id = 'resultList'>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <hr class="footer-hr">
+            <p class="footer-text">CopyRight | Email Validator | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
